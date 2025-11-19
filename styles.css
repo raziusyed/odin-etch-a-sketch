@@ -1,5 +1,33 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
 #grid {
     height: 800px;
     width: 800px;
-    border: solid black;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 1px;
+}
+
+.row {
+    flex: auto;
+    display: flex;
+    background-color: black;
+    gap: 1px;
+}
+
+.col {
+    flex: auto;
+    background-color: white;
+}
+
+.hover {
+    background-color: black;
 }
